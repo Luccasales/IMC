@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC: Cálculo de Índice de Massa Corporal</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+    <main>
+        <section class="section">
+            <header class="Cabecalho">
+                <h1>Tabela IMC</h1>
+            </header>
+            <div class="Content">
+                <div class="Grid-container">
+                    <div class="Tabela-imc">
+                        <h2>IMC</h2>
+                        <ul class="lista-intervalo">
+                            <li><span class="intervalo">Abaixo de 18,5</span></li>
+                            <li><span class="intervalo">Entre 18,5 e 24,9</span></li>
+                            <li><span class="intervalo">Entre 25 e 29,9</span> </li>
+                            <li><span class="intervalo">Entre 30 e 34,9</span></li>
+                            <li><span class="intervalo">Entre 35 e 39,9</span></li>
+                            <li><span class="intervalo">Entre 40,0 ou mais</span></li>
+                        </ul>
+                    </div> <!--Tabela-imc-->
+                    <div class="Tabela-resultado">
+                        <h2>Resultado</h2>
+                        <ul class="lista-resultado">
+                            <li>Abaixo do peso</li>
+                            <li>Peso normal</li>
+                            <li>SobrePeso</li>
+                            <li>Obesidade grau 1</li>
+                            <li>Obesidade grau 2</li>
+                            <li>Obesidade grau 3</li>
+                        </ul>
+                    </div><!--Tabela-resultado-->
+                </div> <!--Grid-->
+                <h3>Calcule seu IMC</h3>
+    
+                <form class="Formulario-imc">
+                    <div class="Campo-input">
+                        <label>Peso:</label>
+                        <input type="text" class="input-peso" id="input-peso" placeholder="Coloque o seu peso" required>
+                    </div>
+                
+                    <div class="Campo-input">
+                        <label>Altura:</label>
+                        <input type="text" class="input-altura" id="input-altura" placeholder="Coloque a sua altura" required>
+                        <button type="button" class="Botao-calcular" id="Botao-calcular">Calcular</button>
+                    </div>  
+                </form>       
+                <div class="resultado-container"></div>
+            </div> <!--Content-->
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

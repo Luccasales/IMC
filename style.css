@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.section{
+    background-color: aqua;
+    height: 50rem;
+    width: 50rem;
+}
+
+.Cabecalho{
+    top: 0;
+    margin-top: 0;
+}
+
+.Content{
+    width: 100%;
+    max-width: 800px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.Grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 10rem;
+}
+
+.Tabela-imc, .Tabela-resultado{
+    text-align: left;
+}
+
+.lista-intervalo, .lista-resultado {
+    list-style: none;
+    
+}
+.Formulario-imc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.Campo-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-peso, 
+.input-altura,
+.Botao-calcular {
+    width: 80%;
+    max-width: 300px;
+    margin: 0.5rem 0;
+}
+
+.input-peso, 
+.input-altura{
+    height: 2rem;
+}
+.Botao-calcular{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+    transition: .4s;
+}
+
+.Botao-calcular:hover{
+    background: #c6c6c6;
+
+    
+}
+
+.peso-normal, .sobrepeso, .obesidade-1, .obesidade-2, .obesidade-3{
+    background-color: green;
+    padding: 15px;
+    margin-top: 0.6rem;
+}
